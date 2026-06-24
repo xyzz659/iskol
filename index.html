@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> iskomissions</title>
+    <meta name="description"
+        content="iskol ni yael — a modern learning environment that builds skills, character, and career readiness." />
+    <link rel="stylesheet" href="styleforindex.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="container nav-inner">
+            <a class="brand" href="#top" aria-label="iskol ni yael home">
+                <div class="logo" aria-hidden="true"></div>
+                <div>
+                    <h1>iskol ni yael</h1>
+                    <p>Build skills. Shape futures.</p>
+                </div>
+            </a>
+
+            <nav class="nav-links" aria-label="Primary">
+                <a href="#programs">Programs</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#admissions">Admissions</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+
+            <div class="nav-cta">
+                <a class="btn" href="home.html">Home</a>
+                <a class="btn btn-primary" href="#admissions">Apply Now</a>
+                <div class="hamburger" role="button" tabindex="0" aria-label="Menu" onclick="toggleMobileMenu()">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <div class="kicker"><span class="dot" aria-hidden="true"></span> Leading learning for every student
+                    </div>
+                    <h2><span class="gradient-text">iskol ni yael</span> — excellence you can see</h2>
+                    <p>
+                        A professional school community focused on academic strength, practical skills, and student
+                        wellbeing.
+                        From your first day to graduation, we help you move from ambition to achievement.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#admissions">Contact Admissions</a>
+                        <a class="btn" href="#programs">Explore Programs</a>
+                    </div>
+
+                    <div class="hero-small">
+                        <span class="check" aria-hidden="true">✓</span>
+                        <span>Fast application guidance • Dedicated support • Clear next steps</span>
+                    </div>
+                </div>
+
+                <aside class="hero-card" aria-label="Quick admissions">
+                    <div class="stat-grid">
+                        <div class="stat">
+                            <strong>Modern Curriculum</strong>
+                            <span>Skills for real-world success</span>
+                        </div>
+                        <div class="stat">
+                            <strong>Student Support</strong>
+                            <span>Guidance from day one</span>
+                        </div>
+                    </div>
+
+                    <div class="admissions-panel">
+                        <h3>Request an application pack</h3>
+                        <div class="mini-form" role="form" aria-label="Application pack">
+                            <div class="field">
+                                <label for="pack-name">Full name</label>
+                                <input id="pack-name" type="text" placeholder="Your name" />
+                            </div>
+                            <div class="field">
+                                <label for="pack-program">Program</label>
+                                <select id="pack-program">
+                                    <option>Undergraduate</option>
+                                    <option>College Programs</option>
+                                    <option>Short Courses</option>
+                                </select>
+                            </div>
+                            <div class="field full">
+                                <label for="pack-email">Email address</label>
+                                <input id="pack-email" type="email" placeholder="you@example.com" />
+                            </div>
+                            <div class="field full">
+                                <button class="btn btn-primary" type="button" onclick="requestPack()"
+                                    style="width:100%">Get Pack</button>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="programs">
+            <div class="container">
+                <div class="section-head">
+                    <h3>Programs designed for growth</h3>
+                    <p>Choose a path that matches your goals—then build confidence with structured learning and
+                        practical experience.</p>
+                </div>
+
+                <div class="grid3">
+                    <article class="card">
+                        <div class="icon" aria-hidden="true">🎓</div>
+                        <h4>Academic Programs</h4>
+                        <p>Solid foundations, modern teaching methods, and measurable progress throughout the semester.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <div class="icon" aria-hidden="true">🛠️</div>
+                        <h4>Skills & Career Focus</h4>
+                        <p>Practical projects and career-ready competencies that support internships and future
+                            employment.</p>
+                    </article>
+                    <article class="card">
+                        <div class="icon" aria-hidden="true">🌍</div>
+                        <h4>Short Courses</h4>
+                        <p>Flexible learning options to upskill quickly—ideal for working learners and career
+                            transitions.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us">
+            <div class="container">
+                <div class="section-head">
+                    <h3>Why iskol ni yael</h3>
+                    <p>Professional standards, supportive staff, and a learning environment built around student
+                        success.</p>
+                </div>
+
+                <div class="split">
+                    <div class="grid2">
+                        <article class="card">
+                            <div class="icon" aria-hidden="true">🏫</div>
+                            <h4>Learning that feels guided</h4>
+                            <p>Small support moments that add up—clear instruction, feedback, and mentoring.</p>
+                        </article>
+                        <article class="card">
+                            <div class="icon" aria-hidden="true">📚</div>
+                            <h4>Quality teaching</h4>
+                            <p>Structured lessons and modern resources that help you understand faster and retain
+                                longer.</p>
+                        </article>
+                        <article class="card">
+                            <div class="icon" aria-hidden="true">🧠</div>
+                            <h4>Student wellbeing</h4>
+                            <p>We encourage discipline, confidence, and respectful community—every day.</p>
+                        </article>
+                        <article class="card">
+                            <div class="icon" aria-hidden="true">🤝</div>
+                            <h4>Supportive admissions</h4>
+                            <p>Fast guidance on requirements, next steps, and documentation—no confusion.</p>
+                        </article>
+                    </div>
+
+                    <div class="quote" aria-label="Featured testimonial">
+                        <p>
+                            “The guidance and learning structure made a real difference. I felt supported, challenged,
+                            and confident every term.”
+                        </p>
+                        <div class="who">
+                            <div class="avatar" aria-hidden="true">MP</div>
+                            <div>
+                                <strong>Student Success Story</strong>
+                                <span>Graduate • iskol ni yael</span>
+                            </div>
+                        </div>
+                        <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+                            <span class="kicker" style="border-radius:14px; margin:0;">✓ Clear guidance</span>
+                            <span class="kicker" style="border-radius:14px; margin:0;">✓ Strong teaching</span>
+                            <span class="kicker" style="border-radius:14px; margin:0;">✓ Supportive community</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <div class="section-head">
+                    <h3>What students say</h3>
+                    <p>Real feedback from learners who care about quality, structure, and outcomes.</p>
+                </div>
+
+                <div class="grid3">
+                    <article class="card">
+                        <div class="icon" aria-hidden="true">💬</div>
+                        <h4>Clear expectations</h4>
+                        <p>“I always knew what to do and how to improve. That clarity helped me stay on track.”</p>
+                    </article>
+                    <article class="card">
+                        <div class="icon" aria-hidden="true">⭐</div>
+                        <h4>Helpful staff</h4>
+                        <p>“Support wasn’t only in class—there was always someone to guide me through challenges.”</p>
+                    </article>
+                    <article class="card">
+                        <div class="icon" aria-hidden="true">📈</div>
+                        <h4>Progress you can measure</h4>
+                        <p>“Assignments and feedback made it easy to see my improvement over time.”</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="admissions">
+            <div class="container">
+                <div class="section-head">
+                    <h3>Admissions — apply with confidence</h3>
+                    <p>Send your details and we’ll help you with the next steps. (Demo form — connect to your email/CRM
+                        later.)</p>
+                </div>
+
+                <div class="form-wrap">
+                    <div class="form-top">
+                        <h3>Contact Admissions</h3>
+                        <p>Tell us what you’re looking for. We’ll respond with application guidance.</p>
+                    </div>
+
+                    <form onsubmit="return submitAdmissions(event)" aria-label="Admissions form">
+                        <div class="form-grid">
+                            <div class="field">
+                                <label for="name">Full name</label>
+                                <input id="name" name="name" type="text" placeholder="Your full name" required />
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                            </div>
+                            <div class="field">
+                                <label for="phone">Phone</label>
+                                <input id="phone" name="phone" type="tel" placeholder="Optional" />
+                            </div>
+                            <div class="field">
+                                <label for="track">Program interest</label>
+                                <select id="track" name="track" required>
+                                    <option value="">Select a program</option>
+                                    <option>Academic Programs</option>
+                                    <option>Skills & Career Focus</option>
+                                    <option>Short Courses</option>
+                                </select>
+                            </div>
+                            <div class="field full">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message"
+                                    placeholder="Questions, preferred start date, or any requirements..."
+                                    required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <div class="fineprint">By submitting, you agree to be contacted regarding your application.
+                            </div>
+                            <button class="btn btn-primary" type="submit">Submit Application Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="container">
+                <div class="section-head">
+                    <h3>Frequently asked questions</h3>
+                    <p>Quick answers to help you move forward.</p>
+                </div>
+
+                <div class="faq" role="list">
+                    <details open>
+                        <summary>
+                            What programs are available at iskol ni yael?
+                            <span class="chev" aria-hidden="true">⌄</span>
+                        </summary>
+                        <p>Academic Programs, Skills & Career Focus, and Short Courses. Use the admissions form to
+                            request the exact options and entry requirements for your level.</p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            How do I apply?
+                            <span class="chev" aria-hidden="true">⌄</span>
+                        </summary>
+                        <p>Use the “Contact Admissions” form above. You’ll receive guidance on documentation and next
+                            steps. For fast processing, ensure your email and message are accurate.</p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            When will I receive a response?
+                            <span class="chev" aria-hidden="true">⌄</span>
+                        </summary>
+                        <p>Typically within 1–2 business days. (Connect the form to your backend/email service to make
+                            it real.)</p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Can I ask questions before applying?
+                            <span class="chev" aria-hidden="true">⌄</span>
+                        </summary>
+                        <p>Yes. The message box is designed for questions—preferred start date, program fit, and any
+                            requirements.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="brand" style="min-width:auto;">
+                <div class="logo" aria-hidden="true"></div>
+                <div>
+                    <h1>iskol ni yael</h1>
+                    <p>Admissions • Academics • Student Support</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="footer-links" aria-label="Footer links">
+                    <a href="#programs">Programs</a>
+                    <a href="#why-us">Why Us</a>
+                    <a href="#admissions">Admissions</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div style="margin-top:10px; color: var(--muted); font-size: 13.5px;">
+                    Contact: admissions@zabdielviloriaj@gmail.com
+                </div>
+                <div style="margin-top:8px; color: var(--muted2); font-size: 12.5px;">
+                    © <span id="year"></span> iskol ni yael. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function toggleMobileMenu() {
+            // Simple UX: scroll to admissions on small screens if menu is clicked.
+            document.querySelector('#admissions').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function requestPack() {
+            const name = document.getElementById('pack-name').value.trim();
+            const email = document.getElementById('pack-email').value.trim();
+            if (!name || !email) {
+                alert('Please enter your name and email to request the application pack.');
+                return;
+            }
+            alert('Application pack request received!\n\nName: ' + name + '\nEmail: ' + email);
+        }
+
+        function submitAdmissions(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const track = document.getElementById('track').value;
+            if (!name || !email || !track) return false;
+
+            alert('Thank you, ' + name + '!\n\nYour request has been submitted for: ' + track + '.');
+            e.target.reset();
+            return false;
+        }
+    </script>
+</body>
+</body>
+</bod </html>
